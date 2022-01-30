@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		047C639E27A5C44500612DEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C639D27A5C44500612DEE /* AppDelegate.swift */; };
-		047C63A027A5C44500612DEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C639F27A5C44500612DEE /* SceneDelegate.swift */; };
-		047C63A227A5C44500612DEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C63A127A5C44500612DEE /* ViewController.swift */; };
-		047C63A527A5C44500612DEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047C63A327A5C44500612DEE /* Main.storyboard */; };
 		047C63A727A5C44700612DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047C63A627A5C44700612DEE /* Assets.xcassets */; };
 		047C63AA27A5C44700612DEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047C63A827A5C44700612DEE /* LaunchScreen.storyboard */; };
+		047C63B527A5C50B00612DEE /* CalculatorCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C63B427A5C50B00612DEE /* CalculatorCoordinator.swift */; };
+		047C63B727A5C56C00612DEE /* CalculatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C63B627A5C56C00612DEE /* CalculatorFactory.swift */; };
+		047C63B927A5C5AD00612DEE /* CalculatorUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C63B827A5C5AD00612DEE /* CalculatorUIView.swift */; };
+		047C63BB27A5C65300612DEE /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C63BA27A5C65300612DEE /* GlobalConstants.swift */; };
+		047C63BF27A5CCA500612DEE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C63BE27A5CCA500612DEE /* UIColor+Extension.swift */; };
+		047C63C127A5CFD500612DEE /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C63C027A5CFD500612DEE /* CalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		047C639A27A5C44500612DEE /* CalulatorLayout_NoSB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalulatorLayout_NoSB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		047C639D27A5C44500612DEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		047C639F27A5C44500612DEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		047C63A127A5C44500612DEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		047C63A427A5C44500612DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		047C63A627A5C44700612DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		047C63A927A5C44700612DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		047C63AB27A5C44700612DEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		047C63B427A5C50B00612DEE /* CalculatorCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorCoordinator.swift; sourceTree = "<group>"; };
+		047C63B627A5C56C00612DEE /* CalculatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorFactory.swift; sourceTree = "<group>"; };
+		047C63B827A5C5AD00612DEE /* CalculatorUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUIView.swift; sourceTree = "<group>"; };
+		047C63BA27A5C65300612DEE /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		047C63BE27A5CCA500612DEE /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		047C63C027A5CFD500612DEE /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		047C639C27A5C44500612DEE /* CalulatorLayout_NoSB */ = {
 			isa = PBXGroup;
 			children = (
+				047C63BD27A5CC9300612DEE /* Common */,
+				047C63BC27A5C65A00612DEE /* Utils */,
+				047C63B327A5C4B900612DEE /* View */,
+				047C63B227A5C4A700612DEE /* Factory */,
+				047C63B127A5C49D00612DEE /* Coordinator */,
 				047C639D27A5C44500612DEE /* AppDelegate.swift */,
-				047C639F27A5C44500612DEE /* SceneDelegate.swift */,
-				047C63A127A5C44500612DEE /* ViewController.swift */,
-				047C63A327A5C44500612DEE /* Main.storyboard */,
 				047C63A627A5C44700612DEE /* Assets.xcassets */,
-				047C63A827A5C44700612DEE /* LaunchScreen.storyboard */,
 				047C63AB27A5C44700612DEE /* Info.plist */,
 			);
 			path = CalulatorLayout_NoSB;
+			sourceTree = "<group>";
+		};
+		047C63B127A5C49D00612DEE /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				047C63B427A5C50B00612DEE /* CalculatorCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		047C63B227A5C4A700612DEE /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				047C63B627A5C56C00612DEE /* CalculatorFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		047C63B327A5C4B900612DEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				047C63A827A5C44700612DEE /* LaunchScreen.storyboard */,
+				047C63B827A5C5AD00612DEE /* CalculatorUIView.swift */,
+				047C63C027A5CFD500612DEE /* CalculatorViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		047C63BC27A5C65A00612DEE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				047C63BA27A5C65300612DEE /* GlobalConstants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		047C63BD27A5CC9300612DEE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				047C63BE27A5CCA500612DEE /* UIColor+Extension.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +176,6 @@
 			files = (
 				047C63AA27A5C44700612DEE /* LaunchScreen.storyboard in Resources */,
 				047C63A727A5C44700612DEE /* Assets.xcassets in Resources */,
-				047C63A527A5C44500612DEE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +186,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				047C63A227A5C44500612DEE /* ViewController.swift in Sources */,
+				047C63B927A5C5AD00612DEE /* CalculatorUIView.swift in Sources */,
+				047C63B527A5C50B00612DEE /* CalculatorCoordinator.swift in Sources */,
+				047C63BB27A5C65300612DEE /* GlobalConstants.swift in Sources */,
+				047C63BF27A5CCA500612DEE /* UIColor+Extension.swift in Sources */,
+				047C63B727A5C56C00612DEE /* CalculatorFactory.swift in Sources */,
+				047C63C127A5CFD500612DEE /* CalculatorViewController.swift in Sources */,
 				047C639E27A5C44500612DEE /* AppDelegate.swift in Sources */,
-				047C63A027A5C44500612DEE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		047C63A327A5C44500612DEE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				047C63A427A5C44500612DEE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		047C63A827A5C44700612DEE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +338,6 @@
 				INFOPLIST_FILE = CalulatorLayout_NoSB/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +365,6 @@
 				INFOPLIST_FILE = CalulatorLayout_NoSB/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
